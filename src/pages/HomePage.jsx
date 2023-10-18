@@ -3,11 +3,13 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import MatchesList from '../components/MatchesList';
 import useMatchesQuery from '../components/useMatchesQuery';
+// import styled from 'styled-components';
 
 function HomePage() {
   const { data: matches } = useMatchesQuery();
 
   return (
+
     <div>
       <Header />
 
@@ -18,6 +20,7 @@ function HomePage() {
 
       <Footer />
     </div>
+
   );
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import HomePage from "./pages/HomePage";
 import { LoginPage } from './pages/LoginPage';
 import StatisticsPage from './pages/StatisticsPage';
-import PlayersPage from './pages/PlayersPage';
+import MatchPage from './pages/MatchPage';
 
 
 function App() {
@@ -10,12 +10,12 @@ function App() {
     <div>
       {/* <HomePage />
       <LoginPage /> */}
-      <StatisticsPage />
+      {/* <StatisticsPage /> */}
       {/* <PlayersPage /> */}
+     <MatchPage/>
     </div>
   );
 }
 
 export default App;
-
 

@@ -6,11 +6,13 @@ function StatisticsPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://api.football-data.org/v4/competitions/SA/scorers', {
-          headers: {
-            'X-Auth-Token': 'e71f953349644f328247999d2453bba5'
-          }
-        });
+        const response = await fetch('/api/v4/competitions/SA/scorers', {
+  method: 'GET',
+  headers: {
+    'X-Auth-Token': 'e71f953349644f328247999d2453bba5'
+  }
+});
+
         const data = await response.json();
         setStatistics(data.scorers);
       } catch (error) {
