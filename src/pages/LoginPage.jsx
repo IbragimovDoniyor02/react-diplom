@@ -67,6 +67,6 @@ export function HomePage({ user, onLogin }) {
   );
 }
 
-
+export default LoginPage;
 
 
